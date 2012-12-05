@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Comment CommentText="Model is in memory representation of data.">
+    <Position X="11.904" Y="0.549" Height="0.521" Width="1.499" />
+  </Comment>
+  <Comment CommentText="IProject represents a project entity">
+    <Position X="6.113" Y="3.783" Height="0.507" Width="1.316" />
+  </Comment>
+  <Comment CommentText="Projects collection is proxy for IProjectsModel.Projects">
+    <Position X="3.436" Y="2.004" Height="0.521" Width="1.809" />
+  </Comment>
+  <Class Name="ProjectBilling.SL.ViewModels.ProjectsViewModel">
+    <Position X="0.5" Y="0.5" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAiUACQQAAAAgAAiACAAAQgAAAAAAAAmAKAAAIAQA=</HashCode>
+      <FileName>ViewModels\ProjectsViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ProjectBilling.SL.ViewModels.ProjectViewModel" BaseTypeListCollapsed="true">
+    <Position X="14.75" Y="1.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAQCIQgAAAAAAAgAgABAAAQAEAAAAIAQAFAAAgAABQA=</HashCode>
+      <FileName>ViewModels\ProjectViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ProjectBilling.SL.Models.ProjectsModel">
+    <Position X="9.5" Y="1.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAAgAIAAAAAQA=</HashCode>
+      <FileName>Models\ProjectsModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ProjectBilling.DataAccess.Entities.Project">
+    <Position X="9" Y="5" Width="1.75" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="ProjectBilling.SL.ViewModels.IProjectViewModel">
+    <Position X="4" Y="4.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\IProjectViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ProjectBilling.SL.Models.IProjectsModel" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAQA=</HashCode>
+      <FileName>Models\IProjectsModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ProjectBilling.DataAccess.Entities.IProject" Collapsed="true">
+    <Position X="4.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="ProjectBilling.SL.ViewModels.IProjectsViewModel">
+    <Position X="5.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\IProjectsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
