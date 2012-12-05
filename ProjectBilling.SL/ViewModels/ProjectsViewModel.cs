@@ -13,7 +13,7 @@ namespace ProjectBilling.SL.ViewModels
         private readonly IProjectsModel _model = null;
 
         private ObservableCollection<IProject> _projects;
-        private int? _selectedValue;
+        private int? _selectedValue = NONE_SELECTED;
         private IProjectViewModel _selectedProject;
         private DelegateCommand _updateCommand;
         private bool _detailsEnabled;
@@ -56,22 +56,21 @@ namespace ProjectBilling.SL.ViewModels
             }
         }
 
+        // Can set this in the mode specified. Need a getter!
         public int? SelectedValue
         {
+            get { return _selectedValue; }
             set
             {
                 if (value == null) return;
 
-                IProject project = GetProject((int) value);
+                _selectedValue = value;
+                IProject project = GetProject((int) _selectedValue);
 
                 if (SelectedProject == null)
-                {
                     SelectedProject = new ProjectViewModel(project);
-                }
                 else
-                {
                     SelectedProject.Update(project);
-                }
 
                 DetailsEstimateStatus = SelectedProject.EstimateStatus;
             }
@@ -112,7 +111,11 @@ namespace ProjectBilling.SL.ViewModels
 
         public DelegateCommand UpdateCommand
         {
-            get { return _updateCommand ?? (_updateCommand = new DelegateCommand(o => UpdateProject())); }
+            get { return _updateCommand ?? (
+                        _updateCommand = new DelegateCommand(
+                                                o => UpdateProject())
+                    ); 
+            }
         }
 
         #region Helper Methods
